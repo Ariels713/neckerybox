@@ -4,12 +4,12 @@ import { Button, Card, CardBody, CardFooter, Row, Col } from 'reactstrap'
 
 // core components
 
-function EaringCard() {
+function RingCard() {
   return (
     <>
       <Row>
         <Col className='ml-auto mr-auto text-center title' md='6'>
-          <h2>Fall Earing Collection</h2>
+          <h2>Fall Ring Collection</h2>
           <h3 className='title-uppercase'>
             <small>Loem Ipsum Lorem Ipusm Lorem Ipsum</small>
           </h3>
@@ -20,13 +20,13 @@ function EaringCard() {
           <Card
             data-background='image'
             style={{
-              backgroundImage: `url(${'https://lh3.googleusercontent.com/_GkdkOATWEGr9sOJLVIMFkPStZD7_h-D4OERwlOWvtTICF0c05t_IUwKZo5ovRqc91ly180ADazKj-BGlDIh5yxBUXXMxKIfoklR_3rhkoaA-nsixzee0wy6N9LdRV0u0F0U3_s6X8xC3UjRg93fqeQaq1aWkwYBVPcqGlflWslyrUhDxEtGKxMUAcn-iV4SLbwyh0GbnMp-fljfcQ7VLpRnMJyifxDx8VyeRgv8cP1S8SR0ivMJXXx4xGdK5PqDkSGu3VUPM7VUFE3K4Pzq0p9Q0_jjxgiLKQF7v7UM4Pk_dQo2qsc1rKprWzHDkw6L3YluGPo5cV0T6kHuLTHvYIXpdM72vNCV7U_o_OO_vxinJCCdnvXTAfbqVGAOXpcA20UPfsLwpCIxNpAlSDof5g1X0oxTHKKi1UBRtrcLLU2_rCoQLqDGxaQL_OjF975fh6Uw4i6Aa5VlHRVakahEpUCphbiy_Kpz60MLHrPUUgvLyyQik7ylfCtUkE6qOqzqGCqZV6aaGmcY_bAMGHWrFBtwh90Y14nfQyEVKFef_i-Wu7qD6sj74uTLlCtppIXfoQJo8tIX2-O7kNUBSg3vSaEDzpfwbjlvd6OPb-mtBDOJMvvhbrUEPjZbHzvMYgGD74R7KDYR4JG6lES4JYT4IqN9P9dHll0xewgrD-4pj-JzC1MElDRvEzxKUekod_Y=w231-h230-no?authuser=0'})`,
+              backgroundImage: `url(${'https://lh3.googleusercontent.com/2Q6msJxX9BxA6or264AP6ZP5qQWkaBFsf70-JKxfjyEwAvyvScGRFiUtYVtux2gtvNCdfgpUUanFdOi9DgtPpxTjUBxmhpDFpuvuZ6blBK3W0sstnyoBgh3AT43DdPDK3J_UKOT72sIIaFEYuOHImPR20lMqEHFuOzaHxDjK_JZaHfdALiMJsABKq5rEvrQvmYDhiicoEcTdNT14xTqu4Vp6GkvqeiqQ911jc2YJvb-FureTApelOakcEAPznD382_SUtuxX4UsQrI7Fblxrq6INMT29f7kMUCxmXVFi_wbREx94uoR8cTcYO2pgbp7Hfqw8X7sZ57Skucw46i2obUcIxIg1owDgxJXoX13tGciO18PmsahKN1GexsKD9eFfi_pQV08-WZ63UkOJ4vZP7WmSHFfGtA4XhwRRfMQwQQ2ONQM9hCfDhmqWqgnTBk2SjHJEXwtOk8Wigb5Et9g6k0mC2aSwfNn8oST2MqsVEVP22W747pEtUTH8z9b7oMS8GGZrwyVmy_w6ky85SgGsCqwvqQrmxa4HjWTbG3JBcEmZfRttyukghiAb6smT4cqjjFlXQgkw4ruNCWoNuzYiD1IUwq8hgX44go8SfPtNxeCf8Yu2z2Irhau7tSXXVyl_MsY4zMeQbh92gSP0Jd-auSltr3mftYiJ1_cKU980srNQy_lQxnPP54Ardab2sP4=w1521-h1818-no?authuser=0'})`,
             }}
           >
             <CardBody>
-              <h6 className='card-category'>Earings</h6>
+              <h6 className='card-category'>Rings</h6>
               <div className='card-icon'>
-                <i aria-hidden={true} className='fas fa-ring'></i>
+                <i aria-hidden={true} className='far fa-gem'></i>
               </div>
               <p className='card-description'>
                 Unlike fashionable design, it lasts many years – even in today’s
@@ -39,7 +39,7 @@ function EaringCard() {
                   href='#pablo'
                   onClick={(e) => e.preventDefault()}
                 >
-                  <i aria-hidden={true} className='fas fa-ring'></i> Collection
+                  <i aria-hidden={true} className='far fa-gem'></i> Read Article
                 </Button>
               </CardFooter>
             </CardBody>
@@ -50,4 +50,4 @@ function EaringCard() {
   )
 }
 
-export default EaringCard
+export default RingCard

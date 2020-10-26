@@ -10,22 +10,29 @@ import NewItems from './components/newestItems/NewItems'
 import CenterContent from './components/centerContent/CenterContent'
 import Designer from './components/meetDesigner/Designer'
 import EaringCard from './components/centerCards/EaringCard'
+import RingCard from './components/centerCards/RingCard'
+import NecklaceCard from './components/centerCards/NecklaceCard'
 import PreFooterNotification from './components/preFooter/PreFooterNotification'
 import Footer from './components/footer/Footer'
+import New_Item from './components/newestItems/New_Item'
 function App() {
   return (
     <>
       <AuthProvider>
         <Navigation />
-        <MainHeader />
-        <NewItems />
-        <CenterContent />
-        <Designer />
-        <EaringCard />
-        <EaringCard />
-        <EaringCard />
+
         <Switch>
           <PrivateRoute path='/accountPageTEST' component={AccountPageTEST} />
+          <Route path='/newitems/:id' component={New_Item} />
+          <Route path='/' exact>
+            <MainHeader />
+            <NewItems />
+            <CenterContent />
+            <Designer />
+            <EaringCard />
+            <RingCard />
+            <NecklaceCard />
+          </Route>
         </Switch>
         <PreFooterNotification />
         <Footer />

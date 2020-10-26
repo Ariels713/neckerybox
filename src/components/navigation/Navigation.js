@@ -66,7 +66,7 @@ function Navigation() {
       <Navbar className='fixed-top' expand='lg' id='navbar-main'>
         <Container>
           <div className='navbar-translate'>
-            <NavbarBrand id='navbar-brand' to='/index' tag={Link}>
+            <NavbarBrand id='navbar-brand' to='/' tag={Link}>
               Neckery Box{' '}
             </NavbarBrand>
             <UncontrolledTooltip placement='bottom' target='navbar-brand'>
@@ -94,7 +94,7 @@ function Navigation() {
                   Rings
                 </DropdownToggle>
                 <DropdownMenu className='dropdown-danger' right>
-                  <DropdownItem to='/index' tag={Link}>
+                  <DropdownItem to='/' tag={Link}>
                     All Components
                   </DropdownItem>
                   <DropdownItem to='/presentation' tag={Link}>
