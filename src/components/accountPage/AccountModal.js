@@ -23,6 +23,7 @@ const AccountModal = ({ history }) => {
     // isLoggedIn,
   } = state
 
+  //Registers a new user
   const registerUser = useCallback(
     async (event) => {
       event.preventDefault()
@@ -31,7 +32,7 @@ const AccountModal = ({ history }) => {
           .auth()
           .createUserWithEmailAndPassword(newUserEmail, newUserPassword)
           .then((res) => {
-            res.user.updateProfile({ displayName: newUserName })
+            res.user.updateProfile({ displayName: newUserName }) // creates a display name.  You have access to that display name
             res.user.sendEmailVerification(() => {})
             dispatch({ type: 'REGISTERING_USER' })
             setLoginModal(false)
@@ -43,6 +44,7 @@ const AccountModal = ({ history }) => {
         let errMessage = e.message
         console.log(e)
         if (errorCode === 'auth/email-already-in-use') {
+          // all error codes
           dispatch({ type: 'EMAIL_IN_USE' })
         } else if (errorCode === 'auth/invalid-email') {
           dispatch({ type: 'INVALID_EMAIL' })
@@ -64,7 +66,7 @@ const AccountModal = ({ history }) => {
       try {
         await firebase
           .auth()
-          .signInWithEmailAndPassword(userEmail, userPassword)
+          .signInWithEmailAndPassword(userEmail, userPassword) //logs in user
           .then((res) => {
             dispatch({ type: 'LOG_IN_USER' })
             setLoginModal(false)
@@ -91,6 +93,7 @@ const AccountModal = ({ history }) => {
   )
 
   const handleGoogleSignIn = async (e) => {
+    // lets use get authenticatted with google sign in via popup
     e.preventDefault()
     const provider = new firebase.auth.GoogleAuthProvider()
     try {

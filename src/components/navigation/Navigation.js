@@ -21,7 +21,7 @@ import {
   Form,
   FormGroup,
   Input,
-  Label,
+  //   Label,
 } from 'reactstrap'
 // core components
 import AccountModal from '../accountPage/AccountModal'
@@ -47,7 +47,7 @@ function Navigation() {
         setLoggedOn(false)
       })
       .catch((e) => {
-        console.log(e)
+        console.log(e, loggedOn)
       })
   }
 
