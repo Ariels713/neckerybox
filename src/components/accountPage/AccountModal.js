@@ -90,6 +90,23 @@ const AccountModal = ({ history }) => {
     [history, userEmail, userPassword]
   )
 
+  const handleGoogleSignIn = async (e) => {
+    e.preventDefault()
+    const provider = new firebase.auth.GoogleAuthProvider()
+    try {
+      await firebase
+        .auth()
+        .signInWithPopup(provider)
+        .then(() => {
+          dispatch({ type: 'LOG_IN_USER' })
+          setLoginModal(false)
+        })
+      history.push('/accountPageTEST')
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   return (
     <>
       <Button
@@ -176,7 +193,11 @@ const AccountModal = ({ history }) => {
                 {/* <Button className="btn-just-icon mr-1" color="facebook">
                   <i className="fa fa-facebook" />
                 </Button> */}
-                <Button className='btn-just-icon mr-1' color='google'>
+                <Button
+                  className='btn-just-icon mr-1'
+                  color='google'
+                  onClick={handleGoogleSignIn}
+                >
                   <i className='fa fa-google' />
                 </Button>
                 {/* <Button className="btn-just-icon" color="twitter">
