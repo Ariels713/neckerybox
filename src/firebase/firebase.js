@@ -1,6 +1,7 @@
 import * as firebase from 'firebase/app'
 import 'firebase/firestore'
 import 'firebase/auth'
+import 'firebase/storage'
 // require("dotenv").config();
 
 var firebaseConfig = {
@@ -16,5 +17,13 @@ var firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig)
 firebase.auth()
+
+// storage
+// export const storage = firebase.storage()
+
+// // Database
+// const db = firebase.firestore
+
+// export const usersCollections = db.collection('users')
 
 export default firebase

@@ -27,7 +27,7 @@ function FooterAboutUs() {
               <Button
                 block
                 // className='btn-neutral'
-                color='success'
+                color='danger'
                 size='lg'
                 type='button'
               >
@@ -138,7 +138,7 @@ function FooterAboutUs() {
               <hr />
               <div className='copyright'>
                 <div className='pull-left'>
-                  © {new Date().getFullYear()} Creative Tim, made with love
+                  <i className='fa fa-heart heart' /> Neckery Box
                 </div>
                 <div className='links pull-right'>
                   <ul>
