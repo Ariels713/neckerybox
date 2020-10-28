@@ -12,6 +12,32 @@ const products = [
     countInStock: 10,
     rating: 4.5,
     numReviews: 12,
+    carouselItems: [
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Somewhere',
+        caption: 'Somewhere',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Somewhere else',
+        caption: 'Somewhere else',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Here it is',
+        caption: 'Here it is',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Here it is',
+        caption: 'Here it is',
+      },
+    ],
   },
   {
     _id: '2',
@@ -26,6 +52,32 @@ const products = [
     countInStock: 7,
     rating: 4.0,
     numReviews: 8,
+    carouselItems: [
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Somewhere',
+        caption: 'Somewhere',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Somewhere else',
+        caption: 'Somewhere else',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Here it is',
+        caption: 'Here it is',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Here it is',
+        caption: 'Here it is',
+      },
+    ],
   },
   {
     _id: '3',
@@ -40,6 +92,32 @@ const products = [
     countInStock: 5,
     rating: 3,
     numReviews: 12,
+    carouselItems: [
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Somewhere',
+        caption: 'Somewhere',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Somewhere else',
+        caption: 'Somewhere else',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Here it is',
+        caption: 'Here it is',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Here it is',
+        caption: 'Here it is',
+      },
+    ],
   },
   {
     _id: '4',
@@ -54,6 +132,32 @@ const products = [
     countInStock: 11,
     rating: 5,
     numReviews: 12,
+    carouselItems: [
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Somewhere',
+        caption: 'Somewhere',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Somewhere else',
+        caption: 'Somewhere else',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Here it is',
+        caption: 'Here it is',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Here it is',
+        caption: 'Here it is',
+      },
+    ],
   },
   {
     _id: '5',
@@ -68,6 +172,32 @@ const products = [
     countInStock: 7,
     rating: 3.5,
     numReviews: 10,
+    carouselItems: [
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Somewhere',
+        caption: 'Somewhere',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Somewhere else',
+        caption: 'Somewhere else',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Here it is',
+        caption: 'Here it is',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Here it is',
+        caption: 'Here it is',
+      },
+    ],
   },
   {
     _id: '6',
@@ -82,6 +212,32 @@ const products = [
     countInStock: 0,
     rating: 4,
     numReviews: 12,
+    carouselItems: [
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Somewhere',
+        caption: 'Somewhere',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Somewhere else',
+        caption: 'Somewhere else',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Here it is',
+        caption: 'Here it is',
+      },
+      {
+        src:
+          'https://lh3.googleusercontent.com/EKspFB0Fs4SAR7GnnW6FBGYJkfGxjrwSw7Jo6enK2Ti2UT_H3g9HgeVx-NgmXP8C4G53RUHeSuQp5qSNbCP0KcIjMTRIQoM784xvrSqkCCiDVlyG2SYh5MI7kNvmuOw1ehqv6RvrKSLIK7mt9W9LXWa69FPU2GZxhAdOzWv4qQ1ouwWJYG-Nv8DqAyO9nsrh3vaRefRxBCZ1iROjOU4LlkE5WXRevEp-mT4EgoLRK3LkjYGEBeXSgM33IaMOjGo2iHk-GlPAEfPrWZSTJVpQEqEZdBRMXuKEESPpIkB6QtSLFyn0Vd7Ee-1Am5e8-07gKOCA2sKpMzsZiOJCXFEFAROSIExgIqmE5-5o3qtsBg2vkXGIeB1Ov5FxsZPFyW6r0urzoer5LcpOR9vLVmL-2iS6NRqhdOY-tx8ITgXn1G4I2OYSvFSZ7pSCJro_Xqdt3Pi_ULeL1pvU46ri_7bM7dzDeVOfZqVBM9yYmVyWaoYkGybgzvC_nS1gqY_tg-iKIoG6VR1yMAyQzh4H7ty3_iAYr82rLrcna2WepqUrGwG_4scGXGG_3rh6XaKpqsOCv2x5nHVy8ACnyhhTpwttGOefe486dpxM3at9mPI0IWM45KQ15EyaqkBiyYxAMp-ZkuKW-AL714ILc1oXBS2vPC5RQYvRCFxUabIqQT8OJ9qQfAjdsau4R7iNWtOC2ZE=w1454-h1938-no?authuser=0',
+        altText: 'Here it is',
+        caption: 'Here it is',
+      },
+    ],
   },
 ]
 

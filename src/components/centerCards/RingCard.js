@@ -1,7 +1,7 @@
 import React from 'react'
 // reactstrap components
 import { Button, Card, CardBody, CardFooter, Row, Col } from 'reactstrap'
-
+// import WeddingRing from '../../assets/icons/siteIcons'
 // core components
 
 function RingCard() {
@@ -25,9 +25,7 @@ function RingCard() {
           >
             <CardBody>
               <h6 className='card-category'>Rings</h6>
-              <div className='card-icon'>
-                <i aria-hidden={true} className='far fa-gem'></i>
-              </div>
+              <div className='card-icon'>{/* <i>{WeddingRing}</i> */}</div>
               <p className='card-description'>
                 Unlike fashionable design, it lasts many years – even in today’s
                 throwaway society.

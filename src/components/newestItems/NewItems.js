@@ -1,14 +1,6 @@
 import React from 'react'
 import Rating from '../rating/Rating'
-import {
-  Card,
-  CardBody,
-  CardTitle,
-  Container,
-  Row,
-  Col,
-  Button,
-} from 'reactstrap'
+import { Card, CardBody, CardTitle, Container, Row, Col } from 'reactstrap'
 import { Link } from 'react-router-dom'
 import products from '../../assets/dummyData/products'
 function NewItems() {
