@@ -15,6 +15,7 @@ import {
   UncontrolledDropdown,
   NavbarBrand,
   Navbar,
+  NavLink,
   NavItem,
   Nav,
   Container,
@@ -75,13 +76,6 @@ function Navigation() {
             >
               Neckery Box{' '}
             </NavbarBrand>
-            <UncontrolledTooltip
-              placement='bottom'
-              target='navbar-brand'
-              style={{ color: '#D151DB' }}
-            >
-              Neckery Box{' '}
-            </UncontrolledTooltip>
             <button
               className='navbar-toggler'
               id='navigation'
@@ -99,72 +93,22 @@ function Navigation() {
           </div>
           <Collapse navbar isOpen={collapseOpen}>
             <Nav className='ml-auto' navbar>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle className='mr-2' color='default' caret nav>
+              <NavItem>
+                <NavLink tag={Link} to='/'>
                   Rings
-                </DropdownToggle>
-                <DropdownMenu className='dropdown-danger' right>
-                  <DropdownItem to='/' tag={Link}>
-                    All Components
-                  </DropdownItem>
-                  <DropdownItem to='/presentation' tag={Link}>
-                    Presentation
-                  </DropdownItem>
-                  <DropdownItem
-                    href='https://demos.creative-tim.com/paper-kit-pro-react/#/documentation/introduction?ref=pkpr-white-navbar'
-                    target='_blank'
-                  >
-                    Documentation
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle className='mr-2' color='default' caret nav>
-                  Necklaces
-                </DropdownToggle>
-                <DropdownMenu className='dropdown-danger' right>
-                  <DropdownItem to='/sections#headers' tag={Link}>
-                    <i className='nc-icon nc-tile-56' />
-                    Headers
-                  </DropdownItem>
-                  <DropdownItem to='/sections#features' tag={Link}>
-                    <i className='nc-icon nc-settings' />
-                    Features
-                  </DropdownItem>
-                  <DropdownItem to='/sections#blogs' tag={Link}>
-                    <i className='nc-icon nc-bullet-list-67' />
-                    Blogs
-                  </DropdownItem>
-                  <DropdownItem to='/sections#teams' tag={Link}>
-                    <i className='nc-icon nc-single-02' />
-                    Teams
-                  </DropdownItem>
-                  <DropdownItem to='/sections#projects' tag={Link}>
-                    <i className='nc-icon nc-calendar-60' />
-                    Projects
-                  </DropdownItem>
-                  <DropdownItem to='/sections#pricing' tag={Link}>
-                    <i className='nc-icon nc-money-coins' />
-                    Pricing
-                  </DropdownItem>
-                  <DropdownItem to='/sections#testimonials' tag={Link}>
-                    <i className='nc-icon nc-badge' />
-                    Testimonials
-                  </DropdownItem>
-                  <DropdownItem to='/sections#contact-us' tag={Link}>
-                    <i className='nc-icon nc-mobile' />
-                    Contact Us
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink>Necklaces</NavLink>
+              </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle color='default' caret nav>
                   Special Gift
                 </DropdownToggle>
                 <DropdownMenu className='dropdown-danger' right>
                   <DropdownItem to='/engagement' tag={Link}>
-                    {/* <i>{WeddingRing}</i> */}
-                    {/* <WeddingRing /> */}
+                    {/* <i>{WeddingRing}</i>
+                    <WeddingRing /> */}
                     Engagement
                   </DropdownItem>
                   <DropdownItem to='/anniversary' tag={Link}>

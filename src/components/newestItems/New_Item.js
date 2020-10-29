@@ -1,17 +1,14 @@
 import React from 'react'
 import products from '../../assets/dummyData/products'
 import NewItemPageHeader from './NewItemPageHeader'
-import Select from 'react-select'
+// import Select from 'react-select'
+import { Link } from 'react-router-dom'
 
 // reactstrap components
 import {
   Button,
   Card,
-  CardHeader,
-  CardBody,
-  CardTitle,
-  UncontrolledCollapse,
-  FormGroup,
+  // FormGroup,
   Container,
   Row,
   Col,
@@ -19,7 +16,9 @@ import {
   CarouselItem,
   CarouselIndicators,
   CarouselCaption,
+  Alert,
 } from 'reactstrap'
+import Rating from '../rating/Rating'
 const New_Item = ({ match }) => {
   const product = products.find((product) => product._id === match.params.id)
   // collapse states and functions
@@ -76,14 +75,15 @@ const New_Item = ({ match }) => {
           <Container>
             <Row className='title-row'>
               <Col md='2'>
-                <h4 className='shop'>Shop</h4>
+                <h4 className='shop'>Best Sellers</h4>
               </Col>
               <Col className='ml-auto' md='4'>
                 <div className='pull-right'>
-                  <span className='text-muted'>Order Status</span>
-                  <Button color='link'>
-                    <i className='fa fa-shopping-cart' /> 0 Items
-                  </Button>
+                  <Link to='/'>
+                    <Button color='link' style={{ color: '#D151DB' }}>
+                      Home
+                    </Button>
+                  </Link>
                 </div>
               </Col>
             </Row>
@@ -147,21 +147,30 @@ const New_Item = ({ match }) => {
                 </div>
                 {/* end carousel */}
               </Col>
+
               <Col md='5' sm='6'>
-                <h2>Suede Blazer</h2>
+                <h2>{product.name}</h2>
                 <h4 className='price'>
-                  <strong>€ 2,900.00</strong>
+                  <strong>${product.price}</strong>
                 </h4>
                 <hr />
-                <p>
-                  This blazer in suede is a must-have of your wardrobe. Team it
-                  with a angora blazer and a angora sweater.
-                </p>
+                <p>{product.description}</p>
                 <span className='label label-default shipping'>
-                  Free shipping to Europe
+                  Free shipping on orders over $100
                 </span>
-                <Row>
-                  <Col md='6' sm='6'>
+                <br />
+                <Rating
+                  value={product.rating}
+                  text={`${product.numReviews} reviews`}
+                />
+
+                <Row style={{ justifyContent: 'center', marginTop: '1em' }}>
+                  {product.countInStock > 0 ? null : (
+                    <Alert color='danger' className='content-center'>
+                      Out Of Stock
+                    </Alert>
+                  )}
+                  {/* <Col md='6' sm='6'>
                     <label>Select color</label>
                     <FormGroup>
                       <Select
@@ -196,14 +205,25 @@ const New_Item = ({ match }) => {
                         placeholder='SIZE'
                       />
                     </FormGroup>
-                  </Col>
+                  </Col> */}
                 </Row>
                 <hr />
                 <Row>
-                  <Col className='offset-md-5' md='7' sm='8'>
-                    <Button block className='btn-round' color='danger'>
-                      Add to Cart  <i className='fa fa-chevron-right' />
-                    </Button>
+                  <Col className='col' md='7' sm='8'>
+                    {product.countInStock > 0 ? (
+                      <Button block className='btn-round' color='danger'>
+                        Add to Cart  <i className='fa fa-chevron-right' />
+                      </Button>
+                    ) : (
+                      <Button
+                        disabled
+                        block
+                        className='btn-round'
+                        color='danger'
+                      >
+                        Add to Cart  <i className='fa fa-chevron-right' />
+                      </Button>
+                    )}
                   </Col>
                 </Row>
               </Col>

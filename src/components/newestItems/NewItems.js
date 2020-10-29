@@ -13,7 +13,7 @@ function NewItems() {
       <div className='wrapper'>
         <div className='section latest-offers'>
           <Container>
-            <h3 className='section-title'>Newest Items</h3>
+            <h3 className='section-title'>Best Sellers</h3>
             <Row>
               {products.map((item) => {
                 return (
@@ -45,7 +45,7 @@ function NewItems() {
                           </div>
                           <div className='price'>
                             <strong className='text-danger'>
-                              {item.price}
+                              $ {item.price}
                             </strong>
                           </div>
                         </CardBody>
